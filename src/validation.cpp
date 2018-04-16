@@ -1231,9 +1231,9 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 {
 
 CAmount nSubsidyBase;
-    nSubsidyBase = 10;  // награда по умолчанию
+    nSubsidyBase = 10;  // 
     if (nPrevHeight == 0) {
-      nSubsidyBase = 510000; //примайн
+      nSubsidyBase = 510000; //
     } else if (nPrevHeight < 500) {
       nSubsidyBase = 1;
     } else if (nPrevHeight < 50000) {
@@ -1247,7 +1247,7 @@ CAmount nSubsidyBase;
     }
 
     CAmount nSubsidy = nSubsidyBase * COIN;
-    // хвалинг
+    
     for (int i = consensusParams.nSubsidyHalvingInterval; i <= nPrevHeight; i += consensusParams.nSubsidyHalvingInterval) {
         nSubsidy -= (nSubsidy/100) * 10;
     }
@@ -1260,16 +1260,16 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue) {
     if(nHeight < 500) {
       ret = 0;
     } else if(nHeight < 50000) {
-      ret = (blockValue/100) * 80; // 80% от блока мн
+      ret = (blockValue/100) * 80; // 80% 
     
  } else if(nHeight < 100000) {
-      ret = (blockValue/100) * 70; // 70% от блока мн
+      ret = (blockValue/100) * 70; // 70% 
     
 	} else if(nHeight < 200000) {
-      ret = (blockValue/100) * 60; // 60% от блока мн
+      ret = (blockValue/100) * 60; // 60% 
     
 	} else if(nHeight < 500000) {
-      ret = (blockValue/100) * 60; // 60% от блока мн
+      ret = (blockValue/100) * 60; // 60% 
     }
 	
     return ret;
