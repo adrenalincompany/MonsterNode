@@ -1,0 +1,6 @@
+usr/local/bin/monsternode-qt usr/bin
+share/pixmaps/monsternode32.xpm usr/share/pixmaps
+share/pixmaps/monsternode16.xpm usr/share/pixmaps
+share/pixmaps/monsternode128.png usr/share/pixmaps
+debian/monsternode-qt.desktop usr/share/applications
+debian/monsternode-qt.protocol usr/share/kde4/services/

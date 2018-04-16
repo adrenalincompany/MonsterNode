@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/monsternode_bg.qm</file>
+        <file alias="de">locale/monsternode_de.qm</file>
+        <file alias="en">locale/monsternode_en.qm</file>
+        <file alias="es">locale/monsternode_es.qm</file>
+        <file alias="fi">locale/monsternode_fi.qm</file>
+        <file alias="fr">locale/monsternode_fr.qm</file>
+        <file alias="it">locale/monsternode_it.qm</file>
+        <file alias="ja">locale/monsternode_ja.qm</file>
+        <file alias="pl">locale/monsternode_pl.qm</file>
+        <file alias="pt">locale/monsternode_pt.qm</file>
+        <file alias="ru">locale/monsternode_ru.qm</file>
+        <file alias="sk">locale/monsternode_sk.qm</file>
+        <file alias="sv">locale/monsternode_sv.qm</file>
+        <file alias="vi">locale/monsternode_vi.qm</file>
+        <file alias="zh_CN">locale/monsternode_zh_CN.qm</file>
+        <file alias="zh_TW">locale/monsternode_zh_TW.qm</file>
+    </qresource>
+</RCC>

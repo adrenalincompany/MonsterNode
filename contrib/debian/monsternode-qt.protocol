@@ -1,0 +1,11 @@
+[Protocol]
+exec=monsternode-qt '%u'
+protocol=monsternode
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

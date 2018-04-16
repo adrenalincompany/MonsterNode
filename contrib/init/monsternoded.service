@@ -1,0 +1,22 @@
+[Unit]
+Description=MonsterNode's distributed currency daemon
+After=network.target
+
+[Service]
+User=monsternodecore
+Group=monsternodecore
+
+Type=forking
+PIDFile=/var/lib/monsternoded/monsternoded.pid
+ExecStart=/usr/bin/monsternoded -daemon -pid=/var/lib/monsternoded/monsternoded.pid \
+-conf=/etc/monsternodecore/monsternode.conf -datadir=/var/lib/monsternoded -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
