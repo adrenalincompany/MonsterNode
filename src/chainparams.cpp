@@ -40,7 +40,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "MNTC - service coin";
+    const char* pszTimestamp = "MonsterNode / restart network";
     const CScript genesisOutputScript = CScript() << ParseHex("049b22c98abe03a0c156fc8e8b52218e826c6fcbd79667fd4edf50f4b6ef97f18aaeca174636446814bec5b3c45e05b3622a4f2c40d0f886dc6d0676001e5337eb") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
